@@ -1,4 +1,45 @@
 @media screen and (max-width:502px) {
+
+    .navbar{
+        display: grid;
+        grid-template-columns: auto 10%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1vw 1vw;
+      }
+        .navmenu-hide , .cont-with-us{
+          display: none;
+        }
+        .menuicon{
+          display: flex;
+        }
+        .nav-cont a{
+      text-decoration: none;
+      color: black;   
+    }
+    .cont-with-us-show{
+      cursor: pointer;
+        font-size: 18px;
+        height: 4vh;
+        width: 12vh;
+        font-weight: bold;
+        color: white;
+        border: none;
+        background-color: #038e43;
+      }
+    .nav-cont a:hover{
+      color: orangered;   
+      transition: 5ms linear;
+    }
+      .show{
+        padding: 1vh 1vh;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(219, 219, 219);
+        row-gap: 2vh;
+        font-size: 18px;
+      }
+      
     .hscroll{
         flex-wrap: nowrap;
         overflow-x: auto;

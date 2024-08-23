@@ -3,6 +3,58 @@
     padding: 0;
     font-family: "Familjen Grotesk", sans-serif;
 }
+
+/* nav bar */
+.navbar{
+    background-color: rgb(239, 239, 239);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 1vw;
+  }
+  .sticky{
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+}
+  .navmenu{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+  .navmenu a{
+    padding: 0vw 2vw;
+    text-decoration: none;
+    color: black;
+  }
+  .navmenu a:hover{
+    color: orangered;
+    font-weight: bold;
+    transition: 20ms linear;
+  }
+  .cont-with-us{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    height: 3vw;
+    width: 9vw;
+    color: white;
+    border: none;
+    background-color: #038e43;
+  }
+.nav-cont{
+  display: none;      
+}
+  .menuicon{
+    display: none;
+  }
+  .menuicon:hover{
+    color: orange;
+    transition: 2ms linear;
+  }
+
+/* nav bar  end */
+
 .container{
     margin-top: 4vh;
     display: flex;

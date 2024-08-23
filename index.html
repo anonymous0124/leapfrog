@@ -8,7 +8,8 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -16,41 +17,45 @@
     rel="stylesheet">
   <link rel="stylesheet" href="leapfrog.css">
   <link rel="stylesheet" href="media.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="supporttab.js"></script>
+  <script src="firsttab.js"></script>
+  <script src="navtoogle.js"></script>
   <title>Leapfrog | Home</title>
 </head>
 
 <body>
-  <nav class=" sticky navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid bg-light">
-      <a class="navbar-brand" href="#"><img src="leapfrogimg/lf-logo.svg" alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-6 column-gap-5">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Join Leapfrog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">About us</a>
-          </li>
-        </ul>
-        <form class="bg-success" role="search">
-          <button class="btn btn-outline-success text-white" type="button">BUILD</button>
-        </form>
+  <div class="sticky">
+    <nav class="sticky navbar">
+  
+      <div class="navmenu">
+       <a href=""> <img src="leapfrogimg/lf-logo.svg" alt=""></a>
+        <div class="navmenu-hide">
+          <a href="">Home</a>
+        <a href="">Services</a>
+        <a href="">Join leapfrog</a>
+        <a href="">Blog</a>
+        <a href="">About us</a>
+        </div>
       </div>
+    <div id="menuicon" class="menuicon"><svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
     </div>
+    <div>
+      <button class="cont-with-us">BUILD WITH US</button>
+    </div>
+  
   </nav>
+  
+  <div class="nav-cont" id="nav-cont">
+    <a href="">Home</a>
+    <a href="">Services</a>
+    <a href="">Join leapfrog</a>
+    <a href="">Blog</a>
+    <a href="">About us</a>
+    <button class="cont-with-us-show">BUILD</button>
+  </div>
+  </div>
+
   <div class="container" id="home">
     <div class="innovate">
       <span style="font-size:6vmax; font-weight: bold;"> Innovate</span>
@@ -676,9 +681,15 @@ We are 100% oriented around solving your problems and making you successful. If 
 </svg></button>
       </div>
     </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="supporttab.js"></script>
-  <script src="firsttab.js"></script>
+    <script>
+      document.getElementById("menuicon").onclick = function(){
+    myfunction()
+  };
+
+  function myfunction(){
+    document.getElementById("nav-cont").classList.toggle("show");
+  }
+    </script>
 </body>
 <footer class="companyinfo">
 <div class="fill">
